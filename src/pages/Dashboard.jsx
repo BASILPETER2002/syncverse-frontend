@@ -7,7 +7,7 @@ export default function Dashboard() {
   const username = localStorage.getItem("user") || "guest";
   const fileInputRef = useRef();
 
-  const API_URL = process.env.REACT_APP_API_URL;
+  const API_URL = "https://syncverse.onrender.com";
 
   const [selectedFile, setSelectedFile] = useState(null);
   const [pdfPreviewURL, setPdfPreviewURL] = useState(null);

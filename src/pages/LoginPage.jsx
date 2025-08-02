@@ -13,8 +13,9 @@ export default function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const endpoint = isRegisterMode
-      ? "http://localhost:5000/register"
-      : "http://localhost:5000/login";
+  ? "https://syncverse.onrender.com/register"
+  : "https://syncverse.onrender.com/login";
+
 
     try {
       const res = await fetch(endpoint, {
