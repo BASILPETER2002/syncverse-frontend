@@ -342,7 +342,7 @@ export default function Dashboard() {
     <button
       onClick={async () => {
         try {
-          const res = await fetch(`https://syncverse.onrender.com/clear/${username}`);
+          const res = await fetch(`https://syncverse.onrender.com/preview/${username}`);
           const data = await res.json();
           alert(data.message || data.error);
         } catch (err) {
